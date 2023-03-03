@@ -187,7 +187,7 @@ class ProductForm extends React.Component {
                 errors.fileError = "Upload Minimum 3 Images"
             }
             if (this.state.file.length > 2) {
-                var re = new RegExp("([a-zA-Z0-9\s_\\.\-:])+(.jpg)$");
+                var re = new RegExp("([a-zA-Z0-9\s_\\.\-:])+(jpg|gif|png|jpeg)$");
                 for (const file of this.state.file) {
                     if (!re.test(file.name)) {
                         isError = true;
@@ -313,7 +313,7 @@ class ProductForm extends React.Component {
                                                 fullWidth
                                                 autoComplete="price"
                                                 InputProps={{
-                                                    startAdornment: <InputAdornment position="start">&#8377;</InputAdornment>,
+                                                    startAdornment: <InputAdornment position="start">Rp</InputAdornment>,
                                                 }}
                                             />
                                             <FormLabel className={classes.formlabel} error={true}>{this.state.minPriceError}</FormLabel>
