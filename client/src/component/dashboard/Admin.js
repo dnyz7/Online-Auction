@@ -42,7 +42,7 @@ const Admin = (props) => {
                 </li>
             </ul>
 
-            <Link className="btn" to='/logout' role="button" style={{ background: "#000066", color: '#f3f3f3' }}>LogOut</Link>
+            <Link className="btn" to='/logout' role="button" style={{ background: "#ff0000", color: '#f3f3f3' }}>LogOut</Link>
         </>
     )
 }

@@ -10,7 +10,7 @@ import ProductHeroLayout from './ProductHeroLayout';
 
 
 const backgroundImage =
-  process.env.PUBLIC_URL + '/auction-bg2.jpeg';
+  process.env.PUBLIC_URL + '/22062_3.jpg';
 
 const styles = theme => ({
   background: {
